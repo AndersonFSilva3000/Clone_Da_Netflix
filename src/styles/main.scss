@@ -1,0 +1,47 @@
+@use 'variables';
+@use 'header';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.logo {
+  color: rgba(229, 9, 20, 1);
+  fill: currentColor;
+  width: 9.25rem;
+}
+
+@mixin title($fontSize: 4rem) {
+  color: variables.$colorText;
+}
+
+@mixin text($fontSize: 1rem) {
+  color: variables.$colorText;
+}
+
+.title--small {
+  @include title(1.25rem);
+}
+
+.title {
+  @include title(1.5rem);
+}
+
+.title--large {
+  @include title;
+}
+
+.text--small {
+  @include text(0.875rem);
+}
+
+.text {
+  @include text;
+}
+
+.text--large {
+  @include text(1.25rem);
+}
