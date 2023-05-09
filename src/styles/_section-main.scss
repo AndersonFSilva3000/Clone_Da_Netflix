@@ -1,0 +1,79 @@
+@use 'variables';
+
+.section {
+  padding: 5.875rem 9.25rem 0 9.25rem;
+  margin-top: -16px;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    width: 75%;
+  }
+
+  &__title {
+    // width: 75%;
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+    padding-top: 2rem;
+    // width: 75%;
+
+    &__container {
+      width: auto;
+      position: absolute;
+      display: inline-flex;
+    }
+
+    &__label {
+      position: absolute;    
+      z-index: 1;    
+      white-space: nowrap;    
+      overflow: hidden;    
+      text-overflow: ellipsis;    
+      transition-property: top, font-size, line-height;    transition-duration: 250ms;    
+      pointer-events: none;    
+      font-size: 1rem;    
+      transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);    
+      color: rgba(255, 255, 255, 0.7);   
+       left: 1rem;    
+       line-height: 1.5rem;    
+       right: 1rem;    
+       top: 2rem;
+    }
+
+    input {
+      margin-top: 1rem;
+      padding: 1.5rem 1rem 0.5rem;
+      line-height: 1.4rem;
+      width: 165%;
+      background: rgba(22,22,22,0.7);
+      border: 1px solid rgba(128, 128, 128, 0.7);
+      border-radius: .25rem;
+      color: rgba(128, 128, 128, 0.7);
+      font-size: 1rem;
+    }
+
+    &__buttom {
+      padding: .75rem 1rem;
+      min-width: 12.75rem;
+      background-color: variables.$colorOficer;
+      border: none;
+      border-radius: .25rem;
+      font-family: NetflixSans;
+      color: variables.$colorText;
+      font-size: 1.5rem;
+      margin-left: 50%;
+      margin-top: 1rem;
+      min-height: 3.5rem;
+      position: relative;
+      cursor: pointer;
+
+      span {
+        margin-left: -5px;
+      }
+    }
+  }
+
+
+}

@@ -1,5 +1,18 @@
 @use 'variables';
 @use 'header';
+@use 'section-main';
+
+@font-face {
+  font-family: NetflixSans;
+  src: url(../../assets/fonts/NetflixSans-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NetflixSans;
+  src: url(../../assets/fonts/NetflixSans-Bold.otf);
+  font-weight: 700;
+}
 
 * {
   padding: 0;
@@ -8,18 +21,20 @@
   list-style: none;
 }
 
-.logo {
-  color: rgba(229, 9, 20, 1);
-  fill: currentColor;
-  width: 9.25rem;
+
+body {
+  font-family: NetflixSans;
 }
+
 
 @mixin title($fontSize: 4rem) {
   color: variables.$colorText;
+  font-size: $fontSize;
 }
 
 @mixin text($fontSize: 1rem) {
   color: variables.$colorText;
+  font-size: $fontSize;
 }
 
 .title--small {
