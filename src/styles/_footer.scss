@@ -11,6 +11,10 @@
     padding: 0 8rem;
     padding-bottom: 6rem;
 
+    @media (max-width: 767px) {
+      padding: 0 2.5rem 6rem;
+    }
+
     p {
       font-size: 1rem;
     }
@@ -31,9 +35,25 @@
       grid-template-columns: 1fr 1fr;
     }
 
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
     &__item {
       font-size: 0.875rem;
 
+    }
+  }
+
+  //mobile
+  @media (max-width: 767px) {
+    select {
+      max-width: 70%;
+
+      option {
+        text-align: center;
+        // margin-left: 1rem;
+      }
     }
   }
 }

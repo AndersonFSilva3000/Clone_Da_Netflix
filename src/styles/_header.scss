@@ -13,6 +13,11 @@
     padding: 0 2rem;
   }
 
+  //mobile
+  @media (max-width: 767px) {
+    padding: 0 1.5rem;
+  }
+
   &__logo {
     color: variables.$colorOficer;
     fill: currentColor;
@@ -32,6 +37,11 @@
         position: relative;
         left: 25px;
         top: 3px;
+
+        //mobile
+        @media (max-width: 767px) {
+          left: 30px;
+        }
       }
     }
 
@@ -42,6 +52,12 @@
       padding: 6px 32px;
       background-color: rgba(22,22,22,0.7);
       font-size: 1rem;
+
+      //mobile
+      @media (max-width: 767px) {
+        max-width: 25px;
+        padding: 6px 25px;
+      }
     }
 
     &__buttom {
@@ -51,6 +67,10 @@
       padding: 6px 16px;
       border-radius: .25rem;
       margin-left: 12px;
+
+      @media (max-width: 767px) {
+        max-width: 40px;
+      }
     }
   }
 }

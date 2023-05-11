@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clone da Netflix</title>
   <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="shortcut icon" href="dist/images/netflix.ico" type="image/x-icon">
   
 </head>
 <body>
@@ -51,7 +52,7 @@
        <div class="principal">
          
          <div class="section__form__container">
-           <label for="input-email" class="section__form__label">Email</label>
+           <label for="input-email" class="section__form__label" id="label">Email</label>
            <div class="section__form__input">
              <input type="email" id="input-email" class="section__form__input__mail">
            </div>
@@ -118,7 +119,7 @@
       <ul class="faq__questions">
         <li class="faq__questions__item">
           <div class="faq__questions__item__question title " data-faq-question>
-            O que é Netflix?
+            <h3 class="title">O que é Netflix?</h3>
           </div>
           <div class="faq__questions__item__answer">
             <p class="title">
@@ -132,7 +133,7 @@
 
         <li class="faq__questions__item">
           <div class="faq__questions__item__question title" data-faq-question>
-            Quanto custa a  Netflix?
+            <h3 class="title">Quanto custa a  Netflix?</h3>
           </div>
           <div class="faq__questions__item__answer">
             <p class="title">
@@ -143,7 +144,7 @@
 
         <li class="faq__questions__item">
           <div class="faq__questions__item__question title" data-faq-question>
-            Onde posso assinar?
+            <h3 class="title">Onde posso assinar?</h3>
           </div>
           <div class="faq__questions__item__answer">
             <p class="title">
@@ -157,7 +158,7 @@
 
         <li class="faq__questions__item">
           <div class="faq__questions__item__question title" data-faq-question>
-            Como faço para cancelar?
+            <h3 class="title">Como faço para cancelar?</h3>
           </div>
           <div class="faq__questions__item__answer">
             <p class="title">
@@ -168,7 +169,7 @@
 
         <li class="faq__questions__item">
           <div class="faq__questions__item__question title" data-faq-question>
-            O que posso assistir na Netflix?
+            <h3 class="title">O que posso assistir na Netflix?</h3>
           </div>
           <div class="faq__questions__item__answer">
             <p class="title">
@@ -179,7 +180,7 @@
 
         <li class="faq__questions__item">
           <div class="faq__questions__item__question title" data-faq-question>
-            A Netflix é adequada para criança?
+            <h3 class="title">A Netflix é adequada para criança?</h3>
           </div>
           <div class="faq__questions__item__answer">
             <p class="title">
@@ -192,26 +193,26 @@
         </li>
       </ul>
       
-      <form class="section__form">
-        <p class="section__subtitle text--large">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+    <form class="section__form">
+      <p class="section__subtitle text--large">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
 
-     <div class="principal">
-       
+     <div class="principal">      
        <div class="section__form__container">
-         <label for="input-email" class="section__form__label">Email</label>
+         <label for="input-email" class="section__form__label" id="label">Email</label>
          <div class="section__form__input">
            <input type="email" id="input-email" class="section__form__input__mail">
          </div>
        </div>
        <button class="section__form__buttom">Vamos lá
          <span>
-           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="section__form__buttom-span" data-name="ChevronRight"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="section__form__buttom-span" data-name="ChevronRight">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path>
+          </svg>
          </span>
        </button>
-
-     </div>
-      </form>
-    </section>
+      </div>
+    </form>
+  </section>
 
     <footer class="footer">
       <div class="footer__container">
@@ -287,6 +288,6 @@
         </div>
     </footer>
 
-    <script src="./src/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

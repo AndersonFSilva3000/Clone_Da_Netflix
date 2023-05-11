@@ -3,10 +3,19 @@
 .faq {
   padding: 4.75rem 8rem 6rem 8rem;
 
+  @media (max-width: 767px) {
+   padding: 5rem 2.5rem 6rem; 
+  }
+
   h2 {
    font-size: 2.5rem; 
    color: variables.$colorText;
    margin-bottom: 1rem;
+
+   //mobile
+   @media (max-width: 767px) {
+    font-size: 2rem;
+   }
   }
 
    &__questions {
@@ -81,5 +90,9 @@
         }
       }
     }
+   }
+
+   .text--large {
+    min-width: 0;
    }
 }
